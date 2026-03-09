@@ -6,151 +6,139 @@
     <title>Jungle0430 · 个人主页</title>
     <meta name="description" content="Jungle0430 的个人主页：个人简介、教育经历、论文、荣誉与奖项。" />
 
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/styles.css" />
-    <script defer src="assets/site.js"></script>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script defer src="assets/js/main.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到正文</a>
 
-    <div class="page">
-      <header class="topbar" role="banner">
-        <div class="brand">
-          <span class="dot" aria-hidden="true"></span>
-          <span class="title">Jungle0430 · 个人主页</span>
-        </div>
-        <div class="topbar-actions">
-          <button
-            class="btn primary"
-            type="button"
-            data-lang-switch
-            data-target-href="index.html"
-            data-preferred-lang="en"
-            aria-label="切换语言到英文"
-          >
-            English
-          </button>
+    <div class="wrap">
+      <header class="header" role="banner">
+        <div class="bar">
+          <div class="brand" aria-label="站点品牌">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-title">Jungle0430</span>
+          </div>
+
+          <nav class="nav" data-hash-nav aria-label="主导航">
+            <a href="zh.html" aria-current="page">主页</a>
+            <a href="blog/zh.html">博客</a>
+            <a href="#education" data-hash-link>教育</a>
+            <a href="#publications" data-hash-link>论文</a>
+            <a href="#honors" data-hash-link>奖项</a>
+          </nav>
+
+          <div class="actions">
+            <button
+              class="btn"
+              type="button"
+              data-lang-switch
+              data-target-href="index.html"
+              data-preferred-lang="en"
+              aria-label="切换语言到英文"
+            >
+              EN
+            </button>
+          </div>
         </div>
       </header>
 
-      <div class="layout">
-        <aside class="card sidebar" aria-label="侧边栏">
-          <div class="avatar" aria-hidden="false">
-            <img src="assets/profile.svg" alt="Jungle0430 的个人照片" />
+      <div class="grid" role="presentation">
+        <section class="panel hero" aria-label="顶部介绍">
+          <h1>
+            [你的姓名] · <span style="color: rgba(59,130,246,0.95)">[你的身份]</span>
+          </h1>
+          <p>
+            我主要关注 <strong>[你的研究/兴趣方向]</strong>。本主页包含个人简介、教育经历、论文与奖项，
+            并提供一个轻量博客页面用于记录想法与项目。
+          </p>
+
+          <div class="meta-row" aria-label="快速信息">
+            <span class="pill"><strong>邮箱</strong> <a href="mailto:your.name@example.com">your.name@example.com</a></span>
+            <span class="pill"
+              ><strong>GitHub</strong>
+              <a href="https://github.com/Jungle0430" target="_blank" rel="noreferrer">Jungle0430</a></span
+            >
+            <span class="pill"><strong>所在地</strong> [城市 / 国家]</span>
           </div>
+        </section>
 
-          <h1 class="name">Jungle0430</h1>
-          <p class="tagline">[你的身份] · [研究方向 / 兴趣]</p>
-
-          <div class="meta" aria-label="联系方式">
-            <div>
-              <strong>邮箱：</strong>
-              <a href="mailto:your.name@example.com">your.name@example.com</a>
+        <aside class="panel profile" aria-label="个人卡片">
+          <div class="avatar">
+            <img src="assets/img/profile.svg" alt="Jungle0430 的个人照片" />
+          </div>
+          <div>
+            <h2>简介</h2>
+            <p>
+              一段简短介绍：<strong>[1–2 句话]</strong>。你可以在本文件中替换占位符，快速完成个性化。
+            </p>
+            <div class="links" aria-label="链接">
+              <span><strong>博客：</strong> <a href="blog/zh.html">blog/zh.html</a></span>
+              <span><strong>简历：</strong> <a href="#" target="_blank" rel="noreferrer">PDF</a></span>
             </div>
-            <div>
-              <strong>GitHub：</strong>
-              <a href="https://github.com/Jungle0430" target="_blank" rel="noreferrer">github.com/Jungle0430</a>
-            </div>
-            <div>
-              <strong>所在地：</strong>[城市 / 国家]
+            <div class="tags" aria-label="关键词">
+              <span class="tag">安全</span>
+              <span class="tag">取证</span>
+              <span class="tag">视觉</span>
+              <span class="tag">大模型</span>
             </div>
           </div>
-
-          <div class="chips" aria-label="关键词">
-            <span class="chip">AI 安全</span>
-            <span class="chip">信息取证</span>
-            <span class="chip">计算机视觉</span>
-            <span class="chip">大模型</span>
-          </div>
-
-          <nav class="nav" data-nav aria-label="页面导航">
-            <a href="#about" aria-current="true">个人简介</a>
-            <a href="#education">教育经历</a>
-            <a href="#publications">论文发表</a>
-            <a href="#honors">荣誉与奖项</a>
-          </nav>
         </aside>
+      </div>
 
-        <main id="main" class="card content" role="main">
-          <section id="about" class="section" aria-label="个人简介">
-            <h2>个人简介</h2>
-            <p>
-              我是 <strong>[你的姓名]</strong>（GitHub：<strong>Jungle0430</strong>），目前
-              <strong>[你的身份，例如硕士研究生/软件工程师]</strong>，就读/就职于
-              <strong>[学校/公司]</strong>。我的研究/兴趣方向包括 <strong>[你的方向]</strong>，
-              尤其关注 <strong>[1-2 个更具体的主题]</strong>。
-            </p>
-            <p>
-              本页面主要展示我的 <strong>教育经历</strong>、<strong>论文/项目</strong> 以及
-              <strong>荣誉与奖项</strong>。（请把方括号内容替换为你的真实信息。）
-            </p>
-          </section>
-
-          <section id="education" class="section" aria-label="教育经历">
-            <h2>教育经历</h2>
-
-            <div class="item">
+      <main id="main" class="panel main" role="main">
+        <section id="education" class="section" aria-label="教育经历">
+          <h2>教育经历</h2>
+          <div class="timeline">
+            <div class="t-item">
               <div class="kicker">202X.09 – 至今</div>
               <div class="headline">硕士 / 博士 · [专业] · [学校]</div>
               <div class="detail">导师：[姓名]。研究方向：[用 1–2 句话概括研究内容]。</div>
             </div>
-
-            <div class="item">
+            <div class="t-item">
               <div class="kicker">201X.09 – 202X.06</div>
               <div class="headline">本科 · [专业] · [学校]</div>
               <div class="detail">绩点/排名（可选）：[..]。毕业设计（可选）：[..]。</div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          <section id="publications" class="section" aria-label="论文与成果">
-            <h2>论文与成果</h2>
-            <p>
-              你可以在这里列出已发表论文、预印本（arXiv）、技术报告或比赛/项目总结。
-            </p>
-
-            <div class="item">
-              <div class="kicker">[会议/期刊] · 202X</div>
-              <div class="headline">[论文标题]</div>
-              <div class="detail">
-                <strong>[你的姓名]</strong>，合作者 A，合作者 B。<br />
-                链接：
-                <a href="#" target="_blank" rel="noreferrer">PDF</a>
-                ·
-                <a href="#" target="_blank" rel="noreferrer">arXiv</a>
-                ·
+        <section id="publications" class="section" aria-label="论文与成果">
+          <h2>论文与成果</h2>
+          <div class="cards">
+            <div class="card">
+              <p class="title">[论文标题]</p>
+              <p class="sub">
+                <strong>[你的姓名]</strong>，合作者 A，合作者 B · [会议/期刊] · 202X<br />
+                <a href="#" target="_blank" rel="noreferrer">PDF</a> ·
+                <a href="#" target="_blank" rel="noreferrer">arXiv</a> ·
                 <a href="#" target="_blank" rel="noreferrer">代码</a>
-              </div>
+              </p>
             </div>
-
-            <ul class="list" aria-label="更多成果">
-              <li>[202X] [另一个论文/项目] — <a href="#" target="_blank" rel="noreferrer">链接</a></li>
-              <li>[202X] [另一个论文/项目] — <a href="#" target="_blank" rel="noreferrer">链接</a></li>
-            </ul>
-          </section>
-
-          <section id="honors" class="section" aria-label="荣誉与奖项">
-            <h2>荣誉与奖项</h2>
-            <ul class="list">
-              <li>[202X] 国家奖学金 / 一等奖学金， [学校]</li>
-              <li>[202X] 优秀毕业生， [省/学校]</li>
-              <li>[202X] 竞赛奖项： [比赛名称]， [名次/奖项]</li>
-            </ul>
-          </section>
-
-          <div class="footer" role="contentinfo">
-            <div>
-              © <span id="year"></span> Jungle0430 · GitHub Pages ·
-              <a href="https://github.com/Jungle0430/Jungle0430.github.io" target="_blank" rel="noreferrer">
-                源码
-              </a>
+            <div class="card">
+              <p class="title">[项目 / 技术报告]</p>
+              <p class="sub">简短描述与链接。</p>
             </div>
           </div>
-        </main>
-      </div>
-    </div>
+        </section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+        <section id="honors" class="section" aria-label="荣誉与奖项">
+          <h2>荣誉与奖项</h2>
+          <ul class="list">
+            <li>[202X] 国家奖学金 / 一等奖学金， [学校]</li>
+            <li>[202X] 优秀毕业生， [省/学校]</li>
+            <li>[202X] 竞赛奖项： [比赛名称]， [名次/奖项]</li>
+          </ul>
+        </section>
+
+        <div class="footer" role="contentinfo">
+          <div>
+            © <span data-year></span> Jungle0430 ·
+            <a href="https://github.com/Jungle0430/Jungle0430.github.io" target="_blank" rel="noreferrer">源码</a>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

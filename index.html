@@ -6,156 +6,140 @@
     <title>Jungle0430 · Homepage</title>
     <meta name="description" content="Personal homepage of Jungle0430 — bio, education, publications, honors & awards." />
 
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="assets/styles.css" />
-    <script defer src="assets/site.js"></script>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script defer src="assets/js/main.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="page">
-      <header class="topbar" role="banner">
-        <div class="brand">
-          <span class="dot" aria-hidden="true"></span>
-          <span class="title">Jungle0430 · Personal Homepage</span>
-        </div>
-        <div class="topbar-actions">
-          <button
-            class="btn primary"
-            type="button"
-            data-lang-switch
-            data-target-href="zh.html"
-            data-preferred-lang="zh-CN"
-            aria-label="Switch language to Chinese"
-          >
-            中文版
-          </button>
+    <div class="wrap">
+      <header class="header" role="banner">
+        <div class="bar">
+          <div class="brand" aria-label="Site brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span class="brand-title">Jungle0430</span>
+          </div>
+
+          <nav class="nav" data-hash-nav aria-label="Primary navigation">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="blog/index.html">Blog</a>
+            <a href="#education" data-hash-link>Education</a>
+            <a href="#publications" data-hash-link>Publications</a>
+            <a href="#honors" data-hash-link>Honors</a>
+          </nav>
+
+          <div class="actions">
+            <button
+              class="btn"
+              type="button"
+              data-lang-switch
+              data-target-href="zh.html"
+              data-preferred-lang="zh-CN"
+              aria-label="Switch language to Chinese"
+            >
+              中文
+            </button>
+          </div>
         </div>
       </header>
 
-      <div class="layout">
-        <aside class="card sidebar" aria-label="Profile sidebar">
-          <div class="avatar" aria-hidden="false">
-            <img src="assets/profile.svg" alt="Profile photo of Jungle0430" />
+      <div class="grid" role="presentation">
+        <section class="panel hero" aria-label="Hero">
+          <h1>
+            [Your Name] · <span style="color: rgba(59,130,246,0.95)">[Your Role]</span>
+          </h1>
+          <p>
+            I work on <strong>[your research / interests]</strong>. This site contains my bio, education,
+            publications, and awards, plus a lightweight blog.
+          </p>
+
+          <div class="meta-row" aria-label="Quick facts">
+            <span class="pill"><strong>Email</strong> <a href="mailto:your.name@example.com">your.name@example.com</a></span>
+            <span class="pill"
+              ><strong>GitHub</strong>
+              <a href="https://github.com/Jungle0430" target="_blank" rel="noreferrer">Jungle0430</a></span
+            >
+            <span class="pill"><strong>Location</strong> [City, Country]</span>
           </div>
+        </section>
 
-          <h1 class="name">Jungle0430</h1>
-          <p class="tagline">[Your role] · [Your research / interests]</p>
-
-          <div class="meta" aria-label="Contact">
-            <div>
-              <strong>Email:</strong>
-              <a href="mailto:your.name@example.com">your.name@example.com</a>
+        <aside class="panel profile" aria-label="Profile card">
+          <div class="avatar">
+            <img src="assets/img/profile.svg" alt="Profile photo of Jungle0430" />
+          </div>
+          <div>
+            <h2>Profile</h2>
+            <p>
+              Short bio: <strong>[1–2 sentences]</strong>. Replace placeholders in this file to personalize
+              the page.
+            </p>
+            <div class="links" aria-label="Links">
+              <span><strong>Blog:</strong> <a href="blog/index.html">blog/index.html</a></span>
+              <span><strong>CV:</strong> <a href="#" target="_blank" rel="noreferrer">PDF</a></span>
             </div>
-            <div>
-              <strong>GitHub:</strong>
-              <a href="https://github.com/Jungle0430" target="_blank" rel="noreferrer">github.com/Jungle0430</a>
-            </div>
-            <div>
-              <strong>Location:</strong> [City, Country]
+            <div class="tags" aria-label="Keywords">
+              <span class="tag">Security</span>
+              <span class="tag">Forensics</span>
+              <span class="tag">Vision</span>
+              <span class="tag">LLMs</span>
             </div>
           </div>
-
-          <div class="chips" aria-label="Keywords">
-            <span class="chip">AI Security</span>
-            <span class="chip">Information Forensics</span>
-            <span class="chip">Computer Vision</span>
-            <span class="chip">LLMs</span>
-          </div>
-
-          <nav class="nav" data-nav aria-label="On-page navigation">
-            <a href="#about" aria-current="true">About</a>
-            <a href="#education">Education</a>
-            <a href="#publications">Publications</a>
-            <a href="#honors">Honors &amp; Awards</a>
-          </nav>
         </aside>
+      </div>
 
-        <main id="main" class="card content" role="main">
-          <section id="about" class="section" aria-label="About me">
-            <h2>About Me</h2>
-            <p>
-              I am <strong>[Your Name]</strong> (GitHub: <strong>Jungle0430</strong>). I am currently
-              <strong>[your current status, e.g., an M.S. student / a software engineer]</strong> at
-              <strong>[Institution / Company]</strong>. My interests focus on <strong>[your key areas]</strong>,
-              especially <strong>[one or two specific topics]</strong>.
-            </p>
-            <p>
-              This page summarizes my <strong>education</strong>, <strong>publications</strong>, and
-              <strong>honors &amp; awards</strong>. (Replace bracketed text with your real info.)
-            </p>
-          </section>
-
-          <section id="education" class="section" aria-label="Education">
-            <h2>Education</h2>
-
-            <div class="item">
+      <main id="main" class="panel main" role="main">
+        <section id="education" class="section" aria-label="Education">
+          <h2>Education</h2>
+          <div class="timeline">
+            <div class="t-item">
               <div class="kicker">202X.09 – Present</div>
               <div class="headline">M.S. / Ph.D. in [Major], [University]</div>
-              <div class="detail">
-                Advisor: [Professor Name]. Research: [1–2 lines describing your focus].
-              </div>
+              <div class="detail">Advisor: [Name]. Focus: [1–2 lines].</div>
             </div>
-
-            <div class="item">
+            <div class="t-item">
               <div class="kicker">201X.09 – 202X.06</div>
               <div class="headline">B.Eng. / B.S. in [Major], [University]</div>
-              <div class="detail">
-                GPA / Rank (optional): [..]. Thesis (optional): [..].
-              </div>
-            </div>
-          </section>
-
-          <section id="publications" class="section" aria-label="Publications">
-            <h2>Publications</h2>
-            <p>
-              Add your papers here. If you don’t have publications yet, you can list preprints, technical
-              reports, or competition write-ups.
-            </p>
-
-            <div class="item">
-              <div class="kicker">[Conference/Journal] · 202X</div>
-              <div class="headline">[Paper Title]</div>
-              <div class="detail">
-                <strong>[Your Name]</strong>, Coauthor A, Coauthor B.<br />
-                Links:
-                <a href="#" target="_blank" rel="noreferrer">PDF</a>
-                ·
-                <a href="#" target="_blank" rel="noreferrer">arXiv</a>
-                ·
-                <a href="#" target="_blank" rel="noreferrer">Code</a>
-              </div>
-            </div>
-
-            <ul class="list" aria-label="More publications">
-              <li>[202X] [Another paper / project] — <a href="#" target="_blank" rel="noreferrer">link</a></li>
-              <li>[202X] [Another paper / project] — <a href="#" target="_blank" rel="noreferrer">link</a></li>
-            </ul>
-          </section>
-
-          <section id="honors" class="section" aria-label="Honors and awards">
-            <h2>Honors &amp; Awards</h2>
-            <ul class="list">
-              <li>[202X] National Scholarship / First-class Scholarship, [University]</li>
-              <li>[202X] Outstanding Graduate, [Province/University]</li>
-              <li>[202X] Competition Award: [Name], [Rank / Prize]</li>
-            </ul>
-          </section>
-
-          <div class="footer" role="contentinfo">
-            <div>
-              © <span id="year"></span> Jungle0430 · Built for GitHub Pages ·
-              <a href="https://github.com/Jungle0430/Jungle0430.github.io" target="_blank" rel="noreferrer">
-                Source
-              </a>
+              <div class="detail">GPA/Rank (optional): [..]. Thesis (optional): [..].</div>
             </div>
           </div>
-        </main>
-      </div>
-    </div>
+        </section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+        <section id="publications" class="section" aria-label="Publications">
+          <h2>Publications</h2>
+          <div class="cards">
+            <div class="card">
+              <p class="title">[Paper Title]</p>
+              <p class="sub">
+                <strong>[Your Name]</strong>, Coauthor A, Coauthor B · [Venue] · 202X<br />
+                <a href="#" target="_blank" rel="noreferrer">PDF</a> ·
+                <a href="#" target="_blank" rel="noreferrer">arXiv</a> ·
+                <a href="#" target="_blank" rel="noreferrer">Code</a>
+              </p>
+            </div>
+            <div class="card">
+              <p class="title">[Project / Technical Report]</p>
+              <p class="sub">A short description and links.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="honors" class="section" aria-label="Honors and awards">
+          <h2>Honors &amp; Awards</h2>
+          <ul class="list">
+            <li>[202X] National Scholarship / First-class Scholarship, [University]</li>
+            <li>[202X] Outstanding Graduate, [Province/University]</li>
+            <li>[202X] Competition Award: [Name], [Rank / Prize]</li>
+          </ul>
+        </section>
+
+        <div class="footer" role="contentinfo">
+          <div>
+            © <span data-year></span> Jungle0430 ·
+            <a href="https://github.com/Jungle0430/Jungle0430.github.io" target="_blank" rel="noreferrer">Source</a>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

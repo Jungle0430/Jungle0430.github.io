@@ -1,26 +1,34 @@
 # Jungle0430.github.io
 
-This repository contains a simple bilingual (EN/中文) personal homepage for GitHub Pages.
+This repository contains a lightweight bilingual (EN/中文) personal homepage + blog for GitHub Pages.
 
 ## What's included
 
-- `index.html`: English homepage (default)
-- `zh.html`: Chinese homepage (switch via the button)
-- `assets/styles.css`: Site styles
-- `assets/site.js`: Language switch + in-page nav highlight
-- `assets/profile.svg`: Profile photo placeholder (replace with your real photo)
+- **Home**
+  - `index.html`: English homepage (default)
+  - `zh.html`: Chinese homepage
+- **Blog**
+  - `blog/index.html`: Blog directory (English)
+  - `blog/zh.html`: Blog directory (中文)
+  - `blog/posts/`: Blog post pages
+- **Assets**
+  - `assets/css/main.css`: Styles (light theme)
+  - `assets/js/main.js`: Language switch + in-page nav highlight
+  - `assets/img/profile.svg`: Profile photo placeholder (replace with your real photo)
+  - `assets/img/favicon.svg`: Favicon
 
 ## Customize content
 
 Open and edit:
 
-- `index.html`: Replace all bracketed placeholders like `[Your Name]`, update your bio/education/publications/awards
+- `index.html`: Replace bracketed placeholders like `[Your Name]`, update your bio/education/publications/awards
 - `zh.html`: Chinese version of the same content
+- `blog/index.html` / `blog/zh.html`: Update blog description and post list
 
 To use your own photo:
 
-- Put your photo at `assets/profile.jpg` (or `.png`)
-- Update both `index.html` and `zh.html` to change the `<img src="assets/profile.svg">` to your file name
+- Put your photo at `assets/img/profile.jpg` (or `.png`)
+- Update `index.html` and `zh.html` to change `<img src="assets/img/profile.svg">` to your file name
 
 ## Preview locally
 
@@ -45,6 +53,6 @@ Suggested git commands:
 
 ```bash
 git add .
-git commit -m "Add bilingual personal homepage"
+git commit -m "Add bilingual homepage and blog"
 git push origin main
 ```
