@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" data-redirect-when-preferred="zh.html">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jungle0430 · Homepage</title>
+    <meta name="description" content="Personal homepage of Jungle0430 — bio, education, publications, honors & awards." />
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="assets/site.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="page">
+      <header class="topbar" role="banner">
+        <div class="brand">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="title">Jungle0430 · Personal Homepage</span>
+        </div>
+        <div class="topbar-actions">
+          <button
+            class="btn primary"
+            type="button"
+            data-lang-switch
+            data-target-href="zh.html"
+            data-preferred-lang="zh-CN"
+            aria-label="Switch language to Chinese"
+          >
+            中文版
+          </button>
+        </div>
+      </header>
+
+      <div class="layout">
+        <aside class="card sidebar" aria-label="Profile sidebar">
+          <div class="avatar" aria-hidden="false">
+            <img src="assets/profile.svg" alt="Profile photo of Jungle0430" />
+          </div>
+
+          <h1 class="name">Jungle0430</h1>
+          <p class="tagline">[Your role] · [Your research / interests]</p>
+
+          <div class="meta" aria-label="Contact">
+            <div>
+              <strong>Email:</strong>
+              <a href="mailto:your.name@example.com">your.name@example.com</a>
+            </div>
+            <div>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/Jungle0430" target="_blank" rel="noreferrer">github.com/Jungle0430</a>
+            </div>
+            <div>
+              <strong>Location:</strong> [City, Country]
+            </div>
+          </div>
+
+          <div class="chips" aria-label="Keywords">
+            <span class="chip">AI Security</span>
+            <span class="chip">Information Forensics</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">LLMs</span>
+          </div>
+
+          <nav class="nav" data-nav aria-label="On-page navigation">
+            <a href="#about" aria-current="true">About</a>
+            <a href="#education">Education</a>
+            <a href="#publications">Publications</a>
+            <a href="#honors">Honors &amp; Awards</a>
+          </nav>
+        </aside>
+
+        <main id="main" class="card content" role="main">
+          <section id="about" class="section" aria-label="About me">
+            <h2>About Me</h2>
+            <p>
+              I am <strong>[Your Name]</strong> (GitHub: <strong>Jungle0430</strong>). I am currently
+              <strong>[your current status, e.g., an M.S. student / a software engineer]</strong> at
+              <strong>[Institution / Company]</strong>. My interests focus on <strong>[your key areas]</strong>,
+              especially <strong>[one or two specific topics]</strong>.
+            </p>
+            <p>
+              This page summarizes my <strong>education</strong>, <strong>publications</strong>, and
+              <strong>honors &amp; awards</strong>. (Replace bracketed text with your real info.)
+            </p>
+          </section>
+
+          <section id="education" class="section" aria-label="Education">
+            <h2>Education</h2>
+
+            <div class="item">
+              <div class="kicker">202X.09 – Present</div>
+              <div class="headline">M.S. / Ph.D. in [Major], [University]</div>
+              <div class="detail">
+                Advisor: [Professor Name]. Research: [1–2 lines describing your focus].
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="kicker">201X.09 – 202X.06</div>
+              <div class="headline">B.Eng. / B.S. in [Major], [University]</div>
+              <div class="detail">
+                GPA / Rank (optional): [..]. Thesis (optional): [..].
+              </div>
+            </div>
+          </section>
+
+          <section id="publications" class="section" aria-label="Publications">
+            <h2>Publications</h2>
+            <p>
+              Add your papers here. If you don’t have publications yet, you can list preprints, technical
+              reports, or competition write-ups.
+            </p>
+
+            <div class="item">
+              <div class="kicker">[Conference/Journal] · 202X</div>
+              <div class="headline">[Paper Title]</div>
+              <div class="detail">
+                <strong>[Your Name]</strong>, Coauthor A, Coauthor B.<br />
+                Links:
+                <a href="#" target="_blank" rel="noreferrer">PDF</a>
+                ·
+                <a href="#" target="_blank" rel="noreferrer">arXiv</a>
+                ·
+                <a href="#" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+
+            <ul class="list" aria-label="More publications">
+              <li>[202X] [Another paper / project] — <a href="#" target="_blank" rel="noreferrer">link</a></li>
+              <li>[202X] [Another paper / project] — <a href="#" target="_blank" rel="noreferrer">link</a></li>
+            </ul>
+          </section>
+
+          <section id="honors" class="section" aria-label="Honors and awards">
+            <h2>Honors &amp; Awards</h2>
+            <ul class="list">
+              <li>[202X] National Scholarship / First-class Scholarship, [University]</li>
+              <li>[202X] Outstanding Graduate, [Province/University]</li>
+              <li>[202X] Competition Award: [Name], [Rank / Prize]</li>
+            </ul>
+          </section>
+
+          <div class="footer" role="contentinfo">
+            <div>
+              © <span id="year"></span> Jungle0430 · Built for GitHub Pages ·
+              <a href="https://github.com/Jungle0430/Jungle0430.github.io" target="_blank" rel="noreferrer">
+                Source
+              </a>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
