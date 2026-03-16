@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jungle0430 · Homepage</title>
-    <meta name="description" content="Personal homepage of Jungle0430 — bio, education, publications, honors & awards." />
+    <meta name="description" content="Personal homepage of Jungle0430 — bio, education, experience, publications, honors & awards." />
 
     <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -23,10 +23,11 @@
 
           <nav class="nav" data-hash-nav aria-label="Primary navigation">
             <a href="index.html" aria-current="page">Home</a>
-            <a href="blog/index.html">Blog</a>
             <a href="#education" data-hash-link>Education</a>
+            <a href="#experience" data-hash-link>Experience</a>
             <a href="#publications" data-hash-link>Publications</a>
             <a href="#honors" data-hash-link>Honors</a>
+            <a href="blog/index.html">Blog</a>
           </nav>
 
           <div class="actions">
@@ -45,47 +46,43 @@
       </header>
 
       <div class="grid" role="presentation">
-        <section class="panel hero" aria-label="Hero">
-          <h1>
-            [Your Name] · <span style="color: rgba(59,130,246,0.95)">[Your Role]</span>
-          </h1>
-          <p>
-            I work on <strong>[your research / interests]</strong>. This site contains my bio, education,
-            publications, and awards, plus a lightweight blog.
-          </p>
-
-          <div class="meta-row" aria-label="Quick facts">
-            <span class="pill"><strong>Email</strong> <a href="mailto:your.name@example.com">your.name@example.com</a></span>
-            <span class="pill"
-              ><strong>GitHub</strong>
-              <a href="https://github.com/Jungle0430" target="_blank" rel="noreferrer">Jungle0430</a></span
-            >
-            <span class="pill"><strong>Location</strong> [City, Country]</span>
-          </div>
-        </section>
-
         <aside class="panel profile" aria-label="Profile card">
           <div class="avatar">
-            <img src="assets/img/profile.svg" alt="Profile photo of Jungle0430" />
+            <img src="assets/img/Jungle.jpg" alt="Profile photo of Jun Jiang (Jungle0430)" />
           </div>
           <div>
-            <h2>Profile</h2>
-            <p>
-              Short bio: <strong>[1–2 sentences]</strong>. Replace placeholders in this file to personalize
-              the page.
-            </p>
-            <div class="links" aria-label="Links">
-              <span><strong>Blog:</strong> <a href="blog/index.html">blog/index.html</a></span>
-              <span><strong>CV:</strong> <a href="#" target="_blank" rel="noreferrer">PDF</a></span>
+            <h2>Jun Jiang</h2>
+            <p>Master's student at USTC · Weiming Group</p>
+            <div class="meta-row" aria-label="Quick facts">
+              <span class="pill"><strong>Email</strong> <a href="mailto:jungle0430@mail.ustc.edu.cn">jungle0430@mail.ustc.edu.cn</a></span>
+              <span class="pill"
+                ><strong>GitHub</strong>
+                <a href="https://github.com/Jungle0430" target="_blank" rel="noreferrer">Jungle0430</a></span
+              >
+              <span class="pill"><strong>Location</strong> Hefei, China</span>
             </div>
-            <div class="tags" aria-label="Keywords">
-              <span class="tag">Security</span>
-              <span class="tag">Forensics</span>
-              <span class="tag">Vision</span>
-              <span class="tag">LLMs</span>
+            <div class="tags" aria-label="Research interests">
+              <span class="tag">AI Content Security</span>
+              <span class="tag">Steganography</span>
+              <span class="tag">Watermarking</span>
             </div>
           </div>
         </aside>
+
+        <section class="panel hero" aria-label="Hero">
+          <h1>
+            Jun Jiang · <span style="color: rgba(59,130,246,0.95)">江俊</span>
+          </h1>
+          <p>
+            I am a Master's student in the Weiming Group at
+            <a href="https://www.ustc.edu.cn/">University of Science and Technology of China (USTC)</a>,
+            supervised by <a href="https://home.ustc.edu.cn/~chenkj/">Assoc. Prof. Kejiang Chen</a> and
+            <a href="http://staff.ustc.edu.cn/~zhangwm/">Prof. Weiming Zhang</a>.
+            Previously, I received my B.Eng. in Computer Science and Technology from the School of Computer Engineering and Science at
+            <a href="https://www.shu.edu.cn/">Shanghai University (SHU)</a> in 2024.
+            My research interests lie in <strong>AI content security, steganography, and watermarking</strong>.
+          </p>
+        </section>
       </div>
 
       <main id="main" class="panel main" role="main">
@@ -93,14 +90,14 @@
           <h2>Education</h2>
           <div class="timeline">
             <div class="t-item">
-              <div class="kicker">202X.09 – Present</div>
-              <div class="headline">M.S. / Ph.D. in [Major], [University]</div>
-              <div class="detail">Advisor: [Name]. Focus: [1–2 lines].</div>
+              <div class="kicker">2024.09 – Present</div>
+              <div class="headline">M.S. in Cybersecurity, University of Science and Technology of China (USTC)</div>
+              <div class="detail">Advisors: Assoc. Prof. Kejiang Chen and Prof. Weiming Zhang.</div>
             </div>
             <div class="t-item">
-              <div class="kicker">201X.09 – 202X.06</div>
-              <div class="headline">B.Eng. / B.S. in [Major], [University]</div>
-              <div class="detail">GPA/Rank (optional): [..]. Thesis (optional): [..].</div>
+              <div class="kicker">2020.09 – 2024.06</div>
+              <div class="headline">B.Eng. in Computer Science and Technology, Shanghai University (SHU)</div>
+              <div class="detail">Recommended as an excellent undergraduate for exempted admission to Master's programs.</div>
             </div>
           </div>
         </section>
@@ -109,27 +106,67 @@
           <h2>Publications</h2>
           <div class="cards">
             <div class="card">
-              <p class="title">[Paper Title]</p>
+              <p class="title">StegoZip: Enhancing Linguistic Steganography Payload in Practice with Large Language Models</p>
               <p class="sub">
-                <strong>[Your Name]</strong>, Coauthor A, Coauthor B · [Venue] · 202X<br />
-                <a href="#" target="_blank" rel="noreferrer">PDF</a> ·
-                <a href="#" target="_blank" rel="noreferrer">arXiv</a> ·
-                <a href="#" target="_blank" rel="noreferrer">Code</a>
+                <span class="authors">Authors: <strong>Jun Jiang</strong>, Zijin Yang, Weiming Zhang, Nenghai Yu, Kejiang Chen</span>
+                <div class="badges" aria-label="Venue badges">
+                  <span class="badge venue">NeurIPS · 2025</span>
+                  <span class="badge ccf">CCF-A</span>
+                <!-- </div>
+                <div class="link-row" aria-label="Paper links"> -->
+                  <a class="linkbox" href="https://neurips.cc/virtual/2025/loc/san-diego/poster/118735" target="_blank" rel="noreferrer">PDF</a>
+                  <a class="linkbox" href="https://github.com/Jungle0430/StegoZip" target="_blank" rel="noreferrer">Code</a>
+                </div>
               </p>
             </div>
             <div class="card">
-              <p class="title">[Project / Technical Report]</p>
-              <p class="sub">A short description and links.</p>
+              <p class="title">Disreo: Provably Secure No-Box-Extraction Linguistic Steganography Based on Distribution Reorganization</p>
+              <p class="sub">
+                <span class="authors">Authors: <strong>Jun Jiang</strong>, Kejiang Chen, Na Zhao, Yuang Qi, Xin Zhang, Weiming Zhang, Nenghai Yu</span>
+                <div class="badges" aria-label="Venue badges">
+                  <span class="badge venue">IEEE TMM · 2026</span>
+                  <span class="badge ccf">CCF-A</span>
+                <!-- </div>
+                <div class="link-row" aria-label="Paper links"> -->
+                  <a class="linkbox" href="https://ieeexplore.ieee.org/document/11329500" target="_blank" rel="noreferrer">PDF</a>
+                </div>
+              </p>
             </div>
           </div>
+        </section>
+
+        <section id="experience" class="section" aria-label="Experience">
+          <h2>Experience</h2>
+          <ul class="list">
+            <li>
+              2026.03 – Present · Remote<br />
+              <em>Reviewer</em>, IEEE Transactions on Dependable and Secure Computing (TDSC).
+              <!-- <div class="badges" aria-label="Service badges">
+                <span class="badge venue">IEEE TDSC</span>
+                <span class="badge ccf">CCF-A</span>
+                <span class="badge kind">Service</span>
+              </div> -->
+            </li>
+            <li>
+              2025.04 – 2025.07 · Hefei,
+              <a href="https://www.iflytek.com/" target="_blank" rel="noreferrer">iFLYTEK</a>
+              <br /><em>Assistant Research Algorithm Engineer</em>
+              <br />Participated in the research and development of LLM watermarking and assisted in its deployment on the Xinghuo LLM.
+            </li>
+            <li>
+              2023.08 – 2023.10 · Shanghai,
+              <a href="https://www.momenta.cn/ch/" target="_blank" rel="noreferrer">Momenta</a>
+              <br /><em>R&amp;D Intern</em>
+              <br />Supported R&amp;D work related to autonomous driving, and assisted in module development, data processing, and technical documentation.
+            </li>
+          </ul>
         </section>
 
         <section id="honors" class="section" aria-label="Honors and awards">
           <h2>Honors &amp; Awards</h2>
           <ul class="list">
-            <li>[202X] National Scholarship / First-class Scholarship, [University]</li>
-            <li>[202X] Outstanding Graduate, [Province/University]</li>
-            <li>[202X] Competition Award: [Name], [Rank / Prize]</li>
+            <li>2025 · Shenzhen Stock Exchange Scholarship, University of Science and Technology of China</li>
+            <li>2024 · Outstanding Graduate of Shanghai, Shanghai University</li>
           </ul>
         </section>
 
